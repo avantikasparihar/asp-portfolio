@@ -130,12 +130,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
-NEDIA_URL = '/img/'
+# MEDIA_URL = '/img/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static')
+# ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
 
 django_heroku.settings(locals())
