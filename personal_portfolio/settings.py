@@ -25,7 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'fbyoqt^a$1qp+2xuh&!6b(5c=&&-k$!3jg&@=%62i1(zyug=3z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
+#ALLOWED_HOSTS = []
 
 ALLOWED_HOSTS = ['avantikasparihar.herokuapp.com', '127.0.0.1']
 
@@ -127,5 +129,13 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
+
+NEDIA_URL = '/img/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
 
 django_heroku.settings(locals())
